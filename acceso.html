@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html>
+  <head>
+    <meta charset="UTF-8" /> <!-- Establece la codificación de caracteres como UTF-8 -->
+    <title>Casa de apuestas</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> <!-- Ícono que aparece en la pestaña del navegador -->
+  </head>
+
+  <body class="acceso"> <!-- Cuerpo del documento con clase 'acceso' para aplicar estilos específicos -->
+
+    <div> <!-- Contenedor general del contenido -->
+
+      <h1>Acceso al casino</h1> <!-- Título principal de la página -->
+      <p>Ingrese sus datos para hacer el ingreso al casino</p> <!-- Texto informativo para el usuario -->
+
+      <form action="perfil.html" method="get"> <!-- Formulario que envía los datos a 'perfil.html' usando método GET -->
+
+        <label for="username">Nombre de usuario</label> <!-- Etiqueta del campo de nombre de usuario -->
+        <input type="text" name="username" id="username" required="" placeholder="JuanPerez" /> <!-- Campo de entrada para el nombre de usuario -->
+
+        <label for="passwoord">Contraseña</label> <!-- Etiqueta del campo de contraseña (nota: 'for' tiene un espacio y typo en "password") -->
+        <input type="password" name="password" id="password" required="" placeholder="*********" /> <!-- Campo de entrada para la contraseña -->
+
+        <button type="submit">Ingresar</button> <!-- Botón para enviar el formulario -->
+
+        <!-- Botón volver al menú en la esquina -->
+        <button class="btn-volver" type="button" onclick="window.location.href='index.html'">Volver al menú</button> <!-- Botón que redirige al menú principal sin enviar formulario -->
+
+      </form>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información — Diamond Casino Royale</title>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#113F64;
+      color:#000;
+      line-height:1.4;
+    }
+
+    /* botón volver arriba */
+    .volver{
+      display:inline-block;
+      margin:10px;
+      padding:6px 10px;
+      background:#ddd;
+      border:1px solid #000;
+      color:#000;
+      font-weight:bold;
+      text-decoration:none;
+    }
+
+    main{ max-width:1000px; margin:10px auto; padding:0 8px 20px; }
+
+    .card{
+      background:#fff;
+      border:1px solid #000;
+      padding:10px;
+      margin:8px 0;
+    }
+
+    h1,h2,h3{ margin:0 0 8px; }
+    h1{ font-size:20px; border-left:6px solid red; padding-left:6px; }
+    h2{ font-size:16px; border-left:4px solid blue; padding-left:6px; }
+    h3{ font-size:14px; }
+
+    p{ margin:6px 0 8px; }
+    ul{ margin:8px 0 0 18px; padding:0; }
+    li{ margin:6px 0; }
+
+    .cols2{ display:flex; gap:8px; }
+    .cols2 > *{ flex:1; }
+    @media(max-width:800px){ .cols2{ flex-direction:column; } }
+
+    .team{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:8px;
+      margin-top:6px;
+    }
+    @media(max-width:800px){ .team{ grid-template-columns:1fr; } }
+    .member{ background:#fff; border:1px solid #000; padding:8px; text-align:center; }
+    .avatar{
+      width:120px; height:120px; border-radius:50%; overflow:hidden;
+      border:2px solid #000; margin:0 auto 6px; background:#ddd;
+    }
+    .avatar img{ width:100%; height:100%; object-fit:cover; display:block; }
+    .name{ font-weight:bold; }
+    .role{ font-size:14px; }
+
+    table{ width:100%; border-collapse:collapse; margin-top:6px; background:#fff; }
+    th,td{ border:1px solid #000; padding:6px; font-size:14px; text-align:left; }
+    thead th{ background:#fff; }
+
+    .alert{
+      background:#ffe9ea;
+      border:1px solid #000;
+      padding:6px;
+      font-weight:bold;
+      color:#7a0e13;
+    }
+
+    footer{
+      margin-top:12px;
+      background:#000;
+      color:#fff;
+      text-align:center;
+      padding:8px 10px;
+      font-size:13px;
+    }
+  </style>
+</head>
+<body>
+  <!-- botón volver -->
+  <a class="volver" href="index.html">← Volver al inicio</a>
+
+  <main>
+    <section class="card">
+      <h1>Información de la aplicación</h1>
+      <p>Esta página explica los objetivos del proyecto, muestra al equipo y resume reglas básicas de la ruleta europea.</p>
+      <div class="alert">Proyecto académico — No es un casino real.</div>
+    </section>
+
+    <section class="card">
+      <h2>Quiénes somos</h2>
+      <p>Pon las fotos reales del equipo. La imagen sale circular automáticamente.</p>
+      <div class="team">
+        <div class="member">
+          <div class="avatar"><img src="assets/benjamin.jpg" alt="Benjamin Cerda"></div>
+          <div class="name">Benjamin Cerda</div>
+          <div class="role">Personal de aseo</div>
+        </div>
+        <div class="member">
+          <div class="avatar"><img src="assets/vicente.jpg" alt="Vicente Álvarez"></div>
+          <div class="name">Vicente Álvarez</div>
+          <div class="role">Estudiante de cine y artes</div>
+        </div>
+        <div class="member">
+          <div class="avatar"><img src="https://i.pinimg.com/236x/0d/5b/12/0d5b12c784e83d7c0d5fc9e0af66fe97.jpg" alt="Ailyn Machuca"></div>
+          <div class="name">Ailyn Machuca</div>
+          <div class="role">Campesina</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Tecnologías utilizadas</h2>
+      <ul>
+        <li>HTML semántico.</li>
+        <li>CSS básico con colores planos y bordes rectos.</li>
+        <li>Sin frameworks.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Ruleta europea (0–36) — Resumen</h2>
+      <div class="cols2">
+        <article>
+          <h3>Tipos de apuesta</h3>
+          <ul>
+            <li><strong>Pleno:</strong> un número (35:1)</li>
+            <li><strong>Color:</strong> rojo o negro (1:1)</li>
+            <li><strong>Par/Impar:</strong> (1:1)</li>
+            <li><strong>Docena/Columna:</strong> (2:1)</li>
+            <li><strong>Calle/Cuadro/Seisena:</strong> (11:1 / 8:1 / 5:1)</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Notas rápidas</h3>
+          <table>
+            <thead><tr><th>Concepto</th><th>Detalle</th></tr></thead>
+            <tbody>
+              <tr><td>Probabilidad pleno</td><td>≈ 1/37</td></tr>
+              <tr><td>Apuestas sencillas</td><td>~48.6% por el 0</td></tr>
+              <tr><td>Consejo</td><td>Define presupuesto y juega por diversión</td></tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Proyecto académico</h2>
+      <p>Este sitio es una maqueta para fines educativos. No ofrece apuestas reales ni gestiona dinero verdadero.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Diamond Casino Royale — Proyecto académico
+  </footer>
+</body>
+</html>

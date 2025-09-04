@@ -1,0 +1,457 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* === ESTILOS DE index.html === */
+
+.index {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #113F64;
+}
+
+.index nav {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.index .nav-left a {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/827/838/small/wave-golden-abstract-background-illustration-free-vector.jpg);
+  transition: background-color 0.3s ease;
+}
+
+.index .nav-left a:hover {
+  background-color: #0056b3;
+}
+
+.index .nav-right {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-right: 100px;
+}
+
+.index h1 {
+  font-size: 8em;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.index p {
+  max-width: 500px;
+  margin-bottom: 40px;
+  font-size: 1.2em;
+  color: #ccc;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.index footer {
+  margin-top: auto;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.index .button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 220px;
+}
+
+.index a.button {
+  text-decoration: none;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/827/838/small/wave-golden-abstract-background-illustration-free-vector.jpg);
+}
+
+.index a.button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/* === ESTILOS EXCLUSIVOS PARA acceso.html === */
+
+.acceso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  background: aliceblue;
+  margin: 0;
+  height: 100vh;
+}
+
+.acceso h1 {
+  color: black;
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.acceso p {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: monospace;
+  background: aliceblue;
+  margin: 0;
+  height: 10vh;
+}
+
+.acceso form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.acceso label {
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
+  display: block;
+  text-align: center;
+}
+
+.acceso input {
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+  text-align: center;
+}
+
+.acceso button {
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 250px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.acceso .btn-volver {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.acceso .btn-volver:hover {
+  background-color: #333;
+}
+
+
+
+
+/* === ESTILOS EXCLUSIVOS PARA mesaruleta.html === */
+
+.mesaruleta {
+  background: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.mesaruleta p {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mesaruleta h1 {
+  color: #101D66;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.mesaruleta h2 {
+  color: #661010;
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.mesaruleta img {
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 500px;
+}
+
+.mesaruleta img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.mesaruleta .panel {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  background: #f9f9f9;
+}
+
+.mesaruleta table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.mesaruleta th,
+.mesaruleta td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.mesaruleta th {
+  background: #ddd;
+}
+
+.mesaruleta button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* === ESTILOS EXCLUSIVOS PARA registro.html === */
+
+.registro {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  background: #001754;
+  margin: 0;
+  height: 100vh;
+}
+
+.registro h1 {
+  color: #E6ECFF;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.registro h2 {
+  color: #B8CBFF;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.registro label {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.registro .login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.registro input,
+.registro button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.registro input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.registro button {
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.registro .btn-volver {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1001;
+  width: auto;
+}
+
+.registro .btn-volver:hover {
+  background-color: #333;
+}
+
+
+
+/* === ESTILOS EXCLUSIVOS PARA transacciones.html === */
+
+.transacciones {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.transacciones h1 {
+  background: #4a90e2;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.transacciones p {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+}
+
+.transacciones form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.transacciones label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.transacciones input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.transacciones .button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.transacciones .button-group button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.transacciones .btn-recargar {
+  background: #4a90e2;
+}
+
+.transacciones .btn-recargar:hover {
+  background: #357ABD;
+}
+
+.transacciones .btn-volver {
+  background: #555;
+}
+
+.transacciones .btn-volver:hover {
+  background: #333;
+}
