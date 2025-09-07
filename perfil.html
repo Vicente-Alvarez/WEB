@@ -4,134 +4,71 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Perfil — Diamond Casino Royale</title>
-  <style>
-    body{
-      margin:0;
-      font-family: Arial, Helvetica, sans-serif;
-      background:#113F64;
-      color:#000;
-    }
-
-    /* botón volver */
-    .volver{
-      display:inline-block;
-      margin:10px;
-      padding:6px 10px;
-      background:#ddd;
-      border:1px solid #000;
-      color:#000;
-      font-weight:bold;
-      text-decoration:none;
-    }
-
-    main{ max-width:1000px; margin:10px auto; padding:0 8px 20px; }
-    .grid{ display:grid; gap:14px; }
-    .grid.cols-2{ grid-template-columns:1fr 1fr; align-items:stretch; }
-    @media(max-width:900px){ .grid.cols-2{ grid-template-columns:1fr; } }
-
-    .card{
-      background:#fff;
-      border:1px solid #000;
-      padding:10px;
-      display:flex;
-      flex-direction:column;
-    }
-
-    h1,h2,h3{ margin:0 0 8px; }
-    h1{ font-size:20px; border-left:6px solid red; padding-left:6px; }
-    h2{ font-size:16px; border-left:4px solid blue; padding-left:6px; }
-    h3{ font-size:14px; }
-    p{ margin:6px 0 8px; }
-
-    .lead{ font-size:14px; color:#333; }
-
-    .kpi{
-      display:flex; justify-content:space-between; align-items:center;
-      border:1px solid #000;
-      padding:6px;
-      margin:4px 0;
-      background:#fff;
-    }
-    .badge{
-      border:1px solid #000;
-      padding:2px 6px;
-      font-size:12px;
-      background:#fff;
-    }
-    .badge.green{ background:#d7f7dd; }
-    .badge.red{ background:#ffd7db; }
-    .badge.black{ background:#fff; }
-
-    .actions{ display:flex; gap:6px; flex-wrap:wrap; margin-top:6px; }
-    .btn{
-      display:inline-block;
-      background:#ddd;
-      border:1px solid #000;
-      padding:6px 8px;
-      font-size:14px;
-      text-decoration:none;
-      color:#000;
-      font-weight:bold;
-    }
-
-    table{ width:100%; border-collapse:collapse; margin-top:6px; background:#fff; }
-    th,td{ border:1px solid #000; padding:6px; font-size:14px; text-align:left; color:#000; }
-    thead th{ background:#fff; font-weight:bold; }
-    tbody tr:nth-child(odd) td{ background:#fafafa; }
-
-    footer{ margin-top:12px; background:#000; color:#fff; text-align:center; padding:8px 10px; font-size:13px; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- botón volver -->
-  <a class="volver" href="index.html">← Volver al inicio</a>
+  <body class="theme">
+    <header class="topbar">
+      <div class="wrap">
+        <a class="brand" href="index.html">Diamond Casino Royale</a>
+        <nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="registro.html">Registro</a>
+    <a href="acceso.html">Acceso</a>
+    <a href="infocasino.html">Información</a>
+    <a href="equipo.html">Equipo</a>
+    <a href="reglas.html">Reglas</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="transacciones.html">Transacciones</a>
+    <a href="mesaruleta.html">Mesa</a>
+  </nav>
 
-  <main>
-    <section class="grid cols-2">
-      <!-- Columna izquierda -->
+      </div>
+    </header>
+
+  <main class="wrap">
+    <h1 class="page-title">Perfil de usuario</h1>
+    <p class="page-sub">Información básica y accesos rápidos.</p>
+
+    <section class="grid2">
       <article class="card">
-        <h1>Perfil de usuario</h1>
-        <p class="lead">Información básica y acceso rápido a tus acciones.</p>
+        <h2 class="section-title">Datos personales</h2>
+        <div class="kpi"><span>Usuario</span><strong class="chip">anagonz</strong></div>
+        <div class="kpi"><span>Nombre</span><strong class="chip">Ana González</strong></div>
+        <div class="kpi"><span>Correo</span><strong class="chip">ana@mail.com</strong></div>
+        <div class="kpi"><span>Nacimiento</span><strong class="chip">1997-03-11</strong></div>
 
-        <h2>Datos personales</h2>
-        <div class="kpi"><strong>Usuario</strong><span class="badge">anagonz</span></div>
-        <div class="kpi"><strong>Nombre</strong><span class="badge">Ana González</span></div>
-        <div class="kpi"><strong>Correo</strong><span class="badge">ana@mail.com</span></div>
-        <div class="kpi"><strong>Nacimiento</strong><span class="badge">1997-03-11</span></div>
-
-        <h2>Saldo</h2>
-        <div class="kpi"><strong>Saldo disponible</strong><span class="badge green">$120.000</span></div>
+        <h2 class="section-title">Saldo</h2>
+        <div class="kpi"><span>Disponible</span><strong class="chip success">$ 120.000</strong></div>
 
         <div class="actions">
           <a class="btn" href="transacciones.html">Depositar / Retirar</a>
-          <a class="btn" href="mesaruleta.html">Ir a la mesa de ruleta</a>
+          <a class="btn ghost" href="mesaruleta.html">Ir a la mesa</a>
         </div>
       </article>
 
-      <!-- Columna derecha -->
       <aside class="card">
-        <h2>Actividad reciente</h2>
-        <h3>Últimas 5 transacciones</h3>
-        <table>
+        <h2 class="section-title">Actividad reciente</h2>
+        <h3 class="muted">Últimas 5 transacciones</h3>
+        <table class="table">
           <thead><tr><th>Fecha</th><th>Tipo</th><th>Monto</th></tr></thead>
           <tbody>
-            <tr><td>01-09-2025</td><td>Depósito</td><td>+ $50.000</td></tr>
-            <tr><td>30-08-2025</td><td>Retiro</td><td>- $10.000</td></tr>
-            <tr><td>29-08-2025</td><td>Ganancia</td><td>+ $5.000</td></tr>
-            <tr><td>29-08-2025</td><td>Apuesta</td><td>- $2.000</td></tr>
-            <tr><td>28-08-2025</td><td>Depósito</td><td>+ $77.000</td></tr>
+            <tr><td>01-09-2025</td><td>Depósito</td><td>+ $ 50.000</td></tr>
+            <tr><td>30-08-2025</td><td>Retiro</td><td>- $ 10.000</td></tr>
+            <tr><td>29-08-2025</td><td>Ganancia</td><td>+ $ 5.000</td></tr>
+            <tr><td>29-08-2025</td><td>Apuesta</td><td>- $ 2.000</td></tr>
+            <tr><td>28-08-2025</td><td>Depósito</td><td>+ $ 77.000</td></tr>
           </tbody>
         </table>
 
         <div class="actions">
-          <a class="btn" href="reglas-ruleta.html">Reglas de la ruleta</a>
-          <a class="btn" href="info.html">Sobre la aplicación</a>
+          <a class="btn ghost" href="reglas.html">Reglas de la ruleta</a>
+          <a class="btn" href="infocasino.html">Sobre la aplicación</a>
         </div>
       </aside>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     © 2025 Diamond Casino Royale — Proyecto académico
   </footer>
 </body>
