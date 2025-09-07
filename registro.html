@@ -1,44 +1,40 @@
-<!DOCTYPE html> <!-- Define el documento como HTML5 -->
-<html>
-  <head>
-    <meta charset="UTF-8" /> <!-- Establece la codificación de caracteres como UTF-8 -->
-    <title>Casa de apuestas</title> <!-- Título que aparece en la pestaña del navegador -->
-    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo de estilos CSS externo -->
-  </head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro — Diamond Casino Royale</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="registro">
+  <!-- Botón volver (mismo que tenías) -->
+  <button class="btn-volver" type="button" onclick="window.location.href='index.html'">Volver al menú</button>
 
-  <body class="registro"> <!-- Cuerpo del documento con clase 'registro' para estilos personalizados -->
+  <div class="login-container">
+    <h1><center>Casino</center></h1>
+    <h2><strong>Registro de usuario</strong></h2>
 
-    <!-- Botón volver al menú fijo en la esquina superior derecha -->
-    <button class="btn-volver" type="button" onclick="window.location.href='index.html'">Volver al menú</button> <!-- Botón que redirige a la página principal -->
+    <!-- Igual que tu flujo: va a acceso -->
+    <form action="acceso.html" method="get">
+      <label for="namecomplete">Nombre completo</label>
+      <input type="text" name="namecomplete" id="namecomplete" required placeholder="Juan Ignacio Perez Gonzalez" />
 
-    <div> <!-- Contenedor principal del formulario -->
-      <h1><center>Casino</center></h1> <!-- Título principal centrado -->
-      <h2><strong>Registro de usuario</strong></h2> <!-- Subtítulo con texto en negrita -->
+      <label for="birthdate">Fecha de nacimiento</label>
+      <input type="date" name="birthdate" id="birthdate" required />
 
-      <form action="acceso.html" method="get"> <!-- Formulario que envía los datos a 'acceso.html' usando método GET -->
+      <label for="username">Nombre de usuario</label>
+      <input type="text" name="username" id="username" required placeholder="JuanPerez" />
 
-        <label for="namecomplete">Nombre completo</label> <!-- Etiqueta para el campo de nombre completo -->
-        <input type="text" name="namecomplete" id="namecomplete" required="" placeholder="Juan Ignacio Perez Gonzalez" /> <!-- Campo de entrada para el nombre completo -->
+      <label for="email">Correo electrónico</label>
+      <input type="email" name="email" id="email" required placeholder="JuanPerez@correo.com"/>
 
-        <label for="birthdate">Fecha de nacimiento</label> <!-- Etiqueta para la fecha de nacimiento -->
-        <input type="date" name="birthdate" id="birthdate" required="" /> <!-- Campo de selección de fecha -->
+      <label for="password">Contraseña</label>
+      <input type="password" name="password" id="password" required placeholder="*********" />
 
-        <label for="username">Nombre de usuario</label> <!-- Etiqueta para el nombre de usuario -->
-        <input type="text" name="username" id="username" required="" placeholder="JuanPerez" /> <!-- Campo de entrada para nombre de usuario -->
+      <label for="password2">Confirmar contraseña</label>
+      <input type="password" name="password2" id="password2" required placeholder="********"/>
 
-        <label for="email">Correo electronico</label> <!-- Etiqueta para el correo electrónico -->
-        <input type="email" name="email" id="email" required="" placeholder="JuanPerez@correo.com"/> <!-- Campo de entrada tipo email -->
-
-        <label for="password">Contraseña</label> <!-- Etiqueta para la contraseña (hay un typo en 'passwoord') -->
-        <input type="password" name="password" id="password" required="" placeholder="*********" /> <!-- Campo de entrada para contraseña -->
-
-        <label for="password2">Confirmar contraseña</label> <!-- Etiqueta para confirmar la contraseña -->
-        <input type="password" name="password2" id="password2" required="" placeholder="********"/> <!-- Campo de entrada para repetir la contraseña -->
-
-        <button type="submit">Registrarme</button> <!-- Botón para enviar el formulario -->
-
-      </form>
-    </div>
-
-  </body>
+      <button type="submit" class="btn">Registrarme</button>
+    </form>
+  </div>
+</body>
 </html>
