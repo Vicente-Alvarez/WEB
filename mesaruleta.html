@@ -1,35 +1,47 @@
-<!DOCTYPE html> <!-- Define el documento como HTML5 -->
-<html lang="es"> <!-- Indica que el idioma principal es español -->
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8"> <!-- Codificación de caracteres en UTF-8 -->
-  <title>Mesa Ruleta</title> <!-- Título que aparece en la pestaña del navegador -->
-  <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS externo -->
+  <meta charset="UTF-8">
+  <title>Mesa Ruleta</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="mesaruleta"> <!-- Cuerpo del documento con clase específica para estilos -->
-
-  <h1>Ruleta Europea</h1> <!-- Título del juego -->
-
-  <h2>¿Estás listo para jugar?</h2> <!-- Subtítulo -->
+<body class="mesaruleta">
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html">Diamond Casino Royale</a>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="registro.html">Registro</a>
+        <a href="acceso.html">Acceso</a>
+        <a href="infocasino.html">Información</a>
+        <a href="equipo.html">Equipo</a>
+        <a href="reglas.html">Reglas</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="transacciones.html">Transacciones</a>
+        <a href="mesaruleta.html">Mesa</a>
+      </nav>
+    </div>
+  </header>
+  <h1>Ruleta Europea</h1>
+  <h2>¿Estás listo para jugar?</h2>
 
   <p>
-    Bienvenido al corazón del juego, donde la fortuna gira sobre un solo eje: la ruleta europea.
-    Frente a ti, una rueda dividida en 37 casillas, del 0 al 36, cada una con la promesa de gloria o derrota.
-    Las fichas tintinean, la bola blanca comienza su danza sobre el borde giratorio, y por un instante, todo se detiene.
-    Este es un juego de estrategia, azar y pura intuición. Elige tu número, tu color, tu apuesta.
-    La rueda está en movimiento.
-  </p> <!-- Descripción temática del juego -->
+    Bienvenido al corazón del juego, donde la fortuna gira sobre un solo eje: la ruleta europea.<br>
+    Frente a ti, una rueda dividida en 37 casillas, del 0 al 36.
+  </p>
 
-  <img src="https://www.888casino.es/blog/sites/newblog.888casino.es/files/inline-images/Ruleta-Europea.jpg" alt="Ruleta Europea"> <!-- Imagen ilustrativa de la ruleta -->
+  <h3> ¡Elige tu número, tu color, tu apuesta!</h3>
 
-  <div class="panel"> <!-- Panel informativo lateral o inferior -->
+  <img src="https://www.888casino.es/blog/sites/newblog.888casino.es/files/inline-images/Ruleta-Europea.jpg" alt="Ruleta Europea">
 
-    <p><b>Estado:</b> Recibiendo apuestas</p> <!-- Estado actual del juego -->
-    <p><b>Saldo:</b> $1000</p> <!-- Saldo simulado del jugador -->
+  <div class="panel">
+    <p><b>Estado:</b> Recibiendo apuestas</p>
+    <p><b>Saldo:</b> $1000</p>
 
-    <h3>Últimos 5 números</h3> <!-- Título del historial de números ganadores -->
-    <table> <!-- Tabla con los últimos resultados -->
-      <tr><th>Número</th><th>Color</th></tr> <!-- Encabezados -->
+    <h3>Últimos 5 números</h3>
+    <table>
+      <tr><th>Número</th><th>Color</th></tr>
       <tr><td>17</td><td>Negro</td></tr>
       <tr><td>0</td><td>Verde</td></tr>
       <tr><td>12</td><td>Rojo</td></tr>
@@ -37,9 +49,9 @@
       <tr><td>8</td><td>Negro</td></tr>
     </table>
 
-    <h3>Últimas 5 apuestas</h3> <!-- Título del historial de apuestas -->
-    <table> <!-- Tabla con detalles de las apuestas -->
-      <tr><th>Tipo</th><th>Monto</th><th>Resultado</th><th>Saldo</th></tr> <!-- Encabezados -->
+    <h3>Últimas 5 apuestas</h3>
+    <table>
+      <tr><th>Tipo</th><th>Monto</th><th>Resultado</th><th>Saldo</th></tr>
       <tr><td>Número 7</td><td>$50</td><td>Perdió</td><td>-50</td></tr>
       <tr><td>Rojo</td><td>$100</td><td>Ganó</td><td>+100</td></tr>
       <tr><td>Par</td><td>$200</td><td>Ganó</td><td>+200</td></tr>
@@ -48,7 +60,9 @@
     </table>
   </div>
 
-  <button onclick="window.location.href='perfil.html'">Volver al perfil</button> <!-- Botón que redirige al perfil del usuario -->
-
+  <!-- Botón con clase .btn para que use la paleta -->
+  <p>
+    <button class="btn" onclick="window.location.href='perfil.html'">Volver al perfil</button>
+  </p>
 </body>
 </html>
